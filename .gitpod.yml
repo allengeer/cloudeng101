@@ -6,4 +6,3 @@ tasks:
       curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
   - command: |
       echo "Starting Command"
-image: public.ecr.aws/vlaaaaaaad/gitpod-terraform:latest
