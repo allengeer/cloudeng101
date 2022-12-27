@@ -3,13 +3,7 @@ tasks:
       echo "Starting Before"
   - init: |
       echo "Starting Init"
+      curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
   - command: |
       echo "Starting Command"
 image: public.ecr.aws/vlaaaaaaad/gitpod-terraform:latest
-github:
-    prebuilds:
-        master: true
-        branches: false
-        addComment: true
-        addBadge: true
-        addCheck: prevent-merge-on-error
