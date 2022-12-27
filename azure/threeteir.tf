@@ -4,7 +4,7 @@ variable "config" {
   type = map(string)
 
   default = {
-    "location" = "aus-east"
+    "location" = "australiaeast"
   }
 }
 
@@ -13,3 +13,7 @@ resource "azurerm_resource_group" "resource_group" {
   name     = "rg-threeteir-${random_pet.random_values.id}"
   location = "${var.config.location}"
 }
+
+# Create the App Service
+
+# Create the DB 

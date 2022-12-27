@@ -2,7 +2,7 @@ tasks:
   - before: |
       echo "Starting Before"
   - init: |
-        echo "Starting Init"
+      echo "Starting Init"
   - command: |
       echo "Starting Command"
 image: 
