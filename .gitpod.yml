@@ -1,0 +1,15 @@
+tasks:
+  - before: |
+      echo "Starting Before"
+  - init: |
+      echo "Starting Init"
+  - command: |
+      echo "Starting Command"
+image: public.ecr.aws/vlaaaaaaad/gitpod-terraform:latest
+github:
+    prebuilds:
+        master: true
+        branches: false
+        addComment: true
+        addBadge: true
+        addCheck: prevent-merge-on-error
